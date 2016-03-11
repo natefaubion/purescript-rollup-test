@@ -1,0 +1,12 @@
+{
+  "private": true,
+  "scripts": {
+    "bundle-iife": "pulp build --require-path ../ && rollup --config rollup.iife.js",
+    "bundle-cjs": "pulp build --require-path ../ && rollup --config rollup.cjs.js"
+  },
+  "dependencies": {
+    "rollup": "^0.25.4",
+    "rollup-plugin-commonjs": "^2.2.1",
+    "rollup-plugin-node-resolve": "^1.5.0"
+  }
+}
